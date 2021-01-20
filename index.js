@@ -56,10 +56,16 @@ export const burger = {
   name: "Burger", 
   price: 18, 
   category: "Lunch", 
-  /*Your code here*/
-}
+  discount: (a) => {
+    if (a == "teacher" | a == "student"){
+      return (13.5);
+    } else {
+      return (16.2);
+    };
+  }
+};
 
-
+console.log(burger.discount("Kirk"));
 
 ///////////////Reviews (MVP)///////////////////
 const reviews = [
