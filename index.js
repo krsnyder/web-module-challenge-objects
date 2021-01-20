@@ -219,9 +219,12 @@ Use the carMaker function below to do the following:
 */
 
 
-function carMaker(/* code here */) {
-    /* code here */
-    
+function carMaker(odd) {
+    let object = {
+      odometer : odd,
+      drive : (distance) => {object.odometer += distance; return object.odometer;},
+    }
+    return(object);
 }
 
 
