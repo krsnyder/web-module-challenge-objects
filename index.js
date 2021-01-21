@@ -6,8 +6,8 @@
 const latte = {name: "Cafe Latte", price: 4, category: "Drinks"};
 const breakfastBurrito = {name: "Breakfast Burrito", price: 16, category:"Breakfast"};
 
-/* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 1a: Make a function that builds objects🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
-Add to the function createMenuItems below so it will create objects following the same format found above for latte and breakfastBurrito (name, price, category).  
+/* 🚀🚀🚀🚀🚀🚀🚀🚀 Task 1a: Make a function that builds objects🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
+Add to the function createMenuItems below so it will create objects following the same format found above for latte and breakfastBurrito (name, price, category).      
 The function should:
   1. Receive values for the object that will be created as parameters
   2. Create and return an object using the received values 
@@ -87,7 +87,7 @@ Using the reviews array above:
 console.log(reviews[5]["feedback"]);
 
 
-/* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
+/* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Using the reviews array above do the following: (no function needed) 
   1. Following the same format (name, rating, feedback), add a new fictitious review object to the reviews array
   2. log the whole array to the console, make sure the new review is inside of it   
@@ -191,9 +191,9 @@ Use the getLongReviews function below to do the following:
 
 function getLongReviews(reviews) {
   let newArray = [];
-  for(let i = 0; i < reviews.length; i++) {
+  for(var i = 0; i < reviews.length; i++){
     let len = reviews[i].feedback.split(" ").length; // Addresses the feedback of each object, converts it to an array of substrings, and counts the length of that array
-    if(len > 15){
+    if(len > 15) {
       newArray.push(reviews[i]);
     };
   };
